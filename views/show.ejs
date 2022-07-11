@@ -1,0 +1,25 @@
+<h1> Rental: <%= rental.address %></h1>
+
+<img src="<%= rental.imageURL %>" alt="" />
+
+<h2>Real Estate: 
+    <a href="<%= rental.linkURL %>" ><%= rental.realEstate %></a>
+</h2>
+
+<p>
+    Rooms: <%= rental.rooms %>
+    <br>
+    Bathrooms: <%= rental.bathrooms %>
+    <br>
+    Extras: <br>
+     <%= rental.extras %>
+    <br>
+    Pet Friendly: <%= rental.petFriendly %>
+    <br>
+    Rental Price: <%= rental.rentPrice %>
+    <br>
+    Additional Information: <br>
+    <%= rental.finalComments %>
+    <br>
+
+</p>

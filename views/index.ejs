@@ -1,0 +1,18 @@
+<h1>Rentals Index</h1>
+
+<ul>
+    <% for (let rental of rentals) { %>
+
+        <li>
+            <a href="<%= baseURL %>/<%= rental.id %>">
+            <%= rental.address %> 
+            
+            </a>
+
+
+        </li>
+
+
+    <% } %>
+
+</ul>
