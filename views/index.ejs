@@ -1,14 +1,22 @@
+<%- include('./partials/head.ejs') %>
+
 <h1>Rentals Index</h1>
 
 <ul>
     <% for (let rental of rentals) { %>
 
         <li>
-            <a href="<%= baseURL %>/<%= rental.id %>">
+            <a href="<%= baseUrl %>/<%= rental.id %>">
             <%= rental.address %> 
-            
             </a>
 
+            <form action="<%= baseUrl %>/<%= rental.id %>?_method=DELETE" method="post">
+                <input type="submit" value="DELETE" />
+
+            </form>
+            <form action="<%= baseUrl %>/<%= rental.id %>/edit">
+                <input type="submit" value="EDIT">
+            </form>
 
         </li>
 
@@ -16,3 +24,11 @@
     <% } %>
 
 </ul>
+<br>
+<br>
+<div>
+    <a href="<%= baseUrl %>/new">Add a new Rental Property to review</a>
+</div>
+<br>
+
+<%- include('./partials/footer.ejs') %>

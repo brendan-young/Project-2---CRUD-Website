@@ -1,0 +1,16 @@
+p {
+    margin: auto;
+}
+
+h1 {
+    font-style: italic;
+    color: blue;
+}
+
+body {
+    background-color: pink;
+}
+
+li {
+    list-style-type: none;
+}

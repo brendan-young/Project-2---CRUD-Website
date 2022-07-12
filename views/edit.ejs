@@ -1,0 +1,93 @@
+<%- include('./partials/head.ejs') %>
+
+<body>
+    <h1>Edit <%= rental.address %></h1>
+    <form action="<%= baseUrl %>/<%= rental.id %>?_method=PUT" method="post">
+
+    <label for="address">Address:</label>
+    <input 
+    type="text"
+    name = "address"
+    required
+    id="address"
+    value="<%= rental.address %>" />
+
+    <label for="realEstate">Real Estate / Property Manager:</label>
+    <input 
+    type="text"
+    name = "realEstate"
+    id="realEstate" 
+    value="<%= rental.realEstate %>" />
+
+    <label for="linkURL">Link to Real Estate:</label>
+    <input 
+    type="linkURL"
+    name = "linkURL"
+    id="linkURL" 
+    value="<%= rental.linkURL %>" />
+
+    <label for="room">Rooms:</label>
+    <input 
+    type="number"
+    name = "rooms"
+    id="rooms" 
+    value="<%= rental.rooms %>" />
+<br>
+    <label for="bathrooms">Bathrooms:</label>
+    <input 
+    type="number"
+    name = "bathrooms"
+    id="bathrooms" 
+    value="<%= rental.bathrooms %>" />
+
+    <label for="extras ">Extra Details:</label>
+    <input 
+    type="text"
+    name = "extras"
+    id="extras" 
+    value="<%= rental.extras %>" />
+
+    <label for="petFriendly">Pet Friendly:</label>
+    <input 
+    type="checkbox"
+    name = "petFriendly"
+    id="petFriendly"
+    <% if (rental.petFriendly) { %>
+        checked
+    <% } %> 
+    />
+
+    <label for="rentPrice">Weekly Rent Price:</label>
+    <input 
+    type="text"
+    name = "rentPrice"
+    id="rentPrice" 
+    value="<%= rental.rentPrice %>" />
+   
+    <label for="finalComments">Final Comments:</label>
+    <input 
+    type="text"
+    name = "finalComments"
+    id="finalComments" 
+    value="<%= rental.finalComments %>" />
+    
+
+    <label for="image">Image:</label>
+    <input 
+    type="file"
+    name = "image"
+    id="image" 
+    value="<%= rental.imageURL %>" />
+
+
+    <br>
+    <br>
+    <input type="submit" value="Update Property">
+
+    </form>
+
+
+
+</body>
+
+<%- include('./partials/footer.ejs') %>

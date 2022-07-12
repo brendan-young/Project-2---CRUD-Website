@@ -1,4 +1,6 @@
-<h1> Rental: <%= rental.address %></h1>
+<%- include('./partials/head.ejs') %>
+
+<h1> Property: <%= rental.address %></h1>
 
 <img src="<%= rental.imageURL %>" alt="" />
 
@@ -14,7 +16,11 @@
     Extras: <br>
      <%= rental.extras %>
     <br>
-    Pet Friendly: <%= rental.petFriendly %>
+    <% if (rental.petFriendly) { %>
+        This property is pet friendly.
+        <% } else { %>
+            This property is not pet friendly.
+        <% } %>
     <br>
     Rental Price: <%= rental.rentPrice %>
     <br>
@@ -23,3 +29,7 @@
     <br>
 
 </p>
+
+
+<%- include('./partials/footer.ejs') %>
+

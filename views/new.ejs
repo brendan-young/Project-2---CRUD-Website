@@ -1,0 +1,76 @@
+<%- include('./partials/head.ejs') %>
+
+<h1>Add a new Property</h1>
+<form action="<%= baseUrl %>" method="post">
+    <label for="address">Address:</label>
+    <input 
+    type="text"
+    name = "address"
+    required
+    id="address" />
+
+    <label for="realEstate">Real Estate / Property Manager:</label>
+    <input 
+    type="text"
+    name = "realEstate"
+    id="realEstate" />
+
+    <label for="linkURL">Link to Real Estate:</label>
+    <input 
+    type="linkURL"
+    name = "linkURL"
+    id="linkURL" />
+
+    <label for="room">Rooms:</label>
+    <input 
+    type="number"
+    name = "rooms"
+    id="rooms" />
+<br>
+    <label for="bathrooms">Bathrooms:</label>
+    <input 
+    type="number"
+    name = "bathrooms"
+    id="bathrooms" />
+
+    <label for="extras ">Extra Details:</label>
+    <input 
+    type="text"
+    name = "extras"
+    id="extras" />
+
+    <label for="petFriendly">Pet Friendly:</label>
+    <input 
+    type="checkbox"
+    name = "petFriendly"
+    id="petFriendly" />
+
+    <label for="rentPrice">Weekly Rent Price:</label>
+    <input 
+    type="text"
+    name = "rentPrice"
+    id="rentPrice" />
+   
+    <label for="finalComments">Final Comments:</label>
+    <input 
+    type="text"
+    name = "finalComments"
+    id="finalComments" />
+    
+
+    <label for="image">Image:</label>
+    <input 
+    type="file"
+    name = "image"
+    id="image" />
+
+<br>
+<br>
+    <input type="submit" value="Create new Rental Property">
+
+</form>
+
+<br>
+<br>
+
+<%- include('./partials/footer.ejs') %>
