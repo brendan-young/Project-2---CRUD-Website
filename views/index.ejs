@@ -1,6 +1,6 @@
 <%- include('./partials/head.ejs') %>
 
-<h1>Rentals Index</h1>
+<h1>Rental Property Reviews</h1>
 
 <ul class="rentals-list">
     <% for (let rental of rentals) { %>
@@ -13,16 +13,14 @@
                         </div>
                 </a>
                 <div class="action-bar">
-                    <a href="#" class="button">
+                    <!-- <a href="#" class="button"> -->
                     <form action="<%= baseUrl %>/<%= rental.id %>/edit">
-                       <input type="submit" value="EDIT">
+                       <input type="submit" value="EDIT" class="button">
                     </form>
-                </a>
+                <!-- </a> -->
                     
                     <form action="<%= baseUrl %>/<%= rental.id %>?_method=DELETE" method="post">
-                        <a href="#" class="button">
-                        <input type="submit" value="DELETE" />
-                        </a>
+                        <input type="submit" value="DELETE" class="button"/>
                     </form>
                 
                 </div>
@@ -35,7 +33,7 @@
 <br>
 <br>
 <div class="new-link">
-    <a href="<%= baseUrl %>/new">Add a new Rental Property to review</a>
+    <a class="create-new" href="<%= baseUrl %>/new">Add a new Rental Property to review</a>
 </div>
 <br>
 
