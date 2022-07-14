@@ -1,6 +1,58 @@
-p {
-    margin: auto;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
+
+html, body {
+    text-align: center;
+    /* height: 100%; */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    /* grid-template-rows: auto 1fr auto; */
+    /* row-gap: 32px; */
+}
+
+.rentals-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    /* gap: 16px; */
+    /* column-gap: 6px;
+    row-gap: 6px; */
+    border: 5px solid lightgreen;
+    align-items: stretch;
+}
+
+.show-img {
+    justify-content: center;
+    margin:0 auto;
+    max-height: 480px;
+    max-width: 480px;
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+    max-height: 240px;
+    max-width: 240px;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px 4px 0 0;
+}
+
+
+.rental-card {
+    padding-bottom: 12px;
+    border: 2px solid red;
+}
+    
 
 h1 {
     font-style: italic;
@@ -8,9 +60,7 @@ h1 {
 }
 
 body {
-    background-color: pink;
+    background-color: lightcyan;
 }
 
-li {
-    list-style-type: none;
-}
+

@@ -8,7 +8,7 @@ module.exports = [
     "petFriendly":false,
     "rentPrice":"$450.60",
     "finalComments": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
-    "imageURL":"https://loremflickr.com/600/600/house"},
+    "imageURL":"https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=400"},
 
     {"address":"47665 Johnson Point",
     "realEstate":"Schamberger, Bednar and Runte",
@@ -19,7 +19,7 @@ module.exports = [
     "petFriendly":true,
     "rentPrice":"$582.87",
     "finalComments": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
-    "imageURL":"https://loremflickr.com/600/600/house"},
+    "imageURL":"https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=400"},
 
 
     {"address":"22 Merrick Park",
@@ -31,7 +31,7 @@ module.exports = [
     "petFriendly":true,
     "rentPrice":"$371.89",
     "finalComments": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
-    "imageURL":"https://loremflickr.com/600/600/house"},
+    "imageURL":"https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&w=400"},
 
     {"address":"3 Basil Way",
     "realEstate":"Ratke, Bode and Blick",
@@ -42,7 +42,7 @@ module.exports = [
     "petFriendly":false,
     "rentPrice":"$629.41",
     "finalComments": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
-    "imageURL":"https://loremflickr.com/600/600/house"},
+    "imageURL":"https://images.pexels.com/photos/164558/pexels-photo-164558.jpeg?auto=compress&cs=tinysrgb&w=400"},
 
     {"address":"378 Schurz Terrace",
     "realEstate":"Lindgren, Thompson and Kuhn",
@@ -53,7 +53,7 @@ module.exports = [
     "petFriendly":true,
     "rentPrice":"$363.09",
     "finalComments": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
-    "imageURL":"https://loremflickr.com/600/600/house"},
+    "imageURL":"https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=400"},
 
     {"address":"59 Bonner Way",
     "realEstate":"Mayer-Kunde",
@@ -64,5 +64,5 @@ module.exports = [
     "petFriendly":false,
     "rentPrice":"$585.60",
     "finalComments": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
-    "imageURL":"https://loremflickr.com/600/600/house"}
+    "imageURL":"https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&w=400"}
 ]
