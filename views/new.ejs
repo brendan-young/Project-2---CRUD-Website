@@ -1,74 +1,95 @@
 <%- include('./partials/head.ejs') %>
 
-<h1>Add a new Property</h1>
+<h1 class="edit-heading">Add a new Property</h1>
+<div class="edit-info">
 <form action="<%= baseUrl %>" method="post">
+    <div class="edit-elements">
     <label for="address">Address:</label>
     <input 
-    type="text"
+    type="textarea"
     name = "address"
     required
     id="address" />
+    </div>
 
+    <div class="edit-elements">
     <label for="realEstate">Real Estate / Property Manager:</label>
     <input 
     type="text"
     name = "realEstate"
     id="realEstate" />
+    </div>  
 
+    <div class="edit-elements">
     <label for="linkURL">Link to Real Estate:</label>
     <input 
-    type="linkURL"
+    type="textarea"
     name = "linkURL"
     id="linkURL" />
 
+    </div>
+    <div class="edit-elements">
     <label for="room">Rooms:</label>
     <input 
     type="number"
     name = "rooms"
     id="rooms" />
-<br>
+    </div>
+
+    <div class="edit-elements">
     <label for="bathrooms">Bathrooms:</label>
     <input 
     type="number"
     name = "bathrooms"
     id="bathrooms" />
+    </div>
 
+    <div class="edit-elements">
     <label for="extras ">Extra Details:</label>
     <input 
-    type="text"
+    type="textarea"
     name = "extras"
     id="extras" />
+    </div>
 
+    <div class="edit-elements">
     <label for="petFriendly">Pet Friendly:</label>
     <input 
     type="checkbox"
     name = "petFriendly"
     id="petFriendly" />
+    </div>
 
+    <div class="edit-elements">
     <label for="rentPrice">Weekly Rent Price:</label>
     <input 
     type="text"
     name = "rentPrice"
     id="rentPrice" />
+    </div>
    
+    <div class="edit-elements">
     <label for="finalComments">Final Comments:</label>
     <input 
-    type="text"
+    type="textarea"
     name = "finalComments"
     id="finalComments" />
+    </div>
     
-
+    <div class="edit-elements">
     <label for="image">Image:</label>
     <input 
     type="file"
     name = "image"
     id="image" />
+    </div>
 
 <br>
 <br>
     <input type="submit" value="Create new Rental Property">
 
 </form>
+</div>
 
 <br>
 <br>

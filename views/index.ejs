@@ -4,28 +4,37 @@
 
 <ul class="rentals-list">
     <% for (let rental of rentals) { %>
-
-        <li class="rental-card">
-            <a class="rentals-info" href="<%= baseUrl %>/<%= rental.id %>">
-                <img src="<%= rental.imageURL %>" />
-            <%= rental.address %> 
-            </a>
-
-            <form action="<%= baseUrl %>/<%= rental.id %>/edit">
-                <input type="submit" value="EDIT">
-            </form>
-
-            <form action="<%= baseUrl %>/<%= rental.id %>?_method=DELETE" method="post">
-                <input type="submit" value="DELETE" />
-            </form>
-        </li>
+        <!-- <div class="card"> -->
+            <li class="rental-card">
+                <a class="rentals-info" href="<%= baseUrl %>/<%= rental.id %>">
+                    <img src="<%= rental.imageURL %>" />
+                        <div class="show-links">
+                            <%= rental.address %> 
+                        </div>
+                </a>
+                <div class="action-bar">
+                    <a href="#" class="button">
+                    <form action="<%= baseUrl %>/<%= rental.id %>/edit">
+                       <input type="submit" value="EDIT">
+                    </form>
+                </a>
+                    
+                    <form action="<%= baseUrl %>/<%= rental.id %>?_method=DELETE" method="post">
+                        <a href="#" class="button">
+                        <input type="submit" value="DELETE" />
+                        </a>
+                    </form>
+                
+                </div>
+            </li>
+        <!-- </div>   -->
 
     <% } %>
 
 </ul>
 <br>
 <br>
-<div>
+<div class="new-link">
     <a href="<%= baseUrl %>/new">Add a new Rental Property to review</a>
 </div>
 <br>

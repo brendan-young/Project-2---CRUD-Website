@@ -53,7 +53,7 @@ module.exports = [
     "petFriendly":true,
     "rentPrice":"$363.09",
     "finalComments": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
-    "imageURL":"https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=400"},
+    "imageURL":"https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=400"},
 
     {"address":"59 Bonner Way",
     "realEstate":"Mayer-Kunde",

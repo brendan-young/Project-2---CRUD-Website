@@ -1,90 +1,101 @@
 <%- include('./partials/head.ejs') %>
 
 <body>
-    <h1>Edit <%= rental.address %></h1>
-    <form action="<%= baseUrl %>/<%= rental.id %>?_method=PUT" method="post">
+    <h1 class="edit-heading">Edit <%= rental.address %></h1>
+    <div class="edit-info">
+        <form action="<%= baseUrl %>/<%= rental.id %>?_method=PUT" method="post">
+            <div class="edit-elements">
+                <label for="address">Address:</label>
+                <input 
+                type="textarea"
+                name = "address"
+                required
+                id="address"
+                value="<%= rental.address %>" />
+            </div>
 
-    <label for="address">Address:</label>
-    <input 
-    type="text"
-    name = "address"
-    required
-    id="address"
-    value="<%= rental.address %>" />
+            <div class="edit-elements">
+                <label for="realEstate">Real Estate / Property Manager:</label>
+                <input 
+                type="text"
+                name = "realEstate"
+                id="realEstate" 
+                value="<%= rental.realEstate %>" />
+            </div>
+            <div class="edit-elements">    
+                <label for="linkURL">Link to Real Estate:</label>
+                <input 
+                type="textarea"
+                name = "linkURL"
+                id="linkURL" 
+                value="<%= rental.linkURL %>" />
+            </div>
+            <div class="edit-elements">                
+                <label for="room">Rooms:</label>
+                <input 
+                type="number"
+                name = "rooms"
+                id="rooms" 
+                value="<%= rental.rooms %>" />
+            </div>
+            <div class="edit-elements">    
+                <label for="bathrooms">Bathrooms:</label>
+                <input 
+                type="number"
+                name = "bathrooms"
+                id="bathrooms" 
+                value="<%= rental.bathrooms %>" />
+            </div>
+            <div class="edit-elements">
+                <label for="extras ">Extra Details:</label>
+                <input 
+                type="textarea"
+                name = "extras"
+                id="extras" 
+                value="<%= rental.extras %>" />
+            </div>
+            <div class="edit-elements">
+                <label for="petFriendly">Pet Friendly:</label>
+                <input 
+                type="checkbox"
+                name = "petFriendly"
+                id="petFriendly"
+                <% if (rental.petFriendly) { %>
+                    checked
+                <% } %> 
+                />
 
-    <label for="realEstate">Real Estate / Property Manager:</label>
-    <input 
-    type="text"
-    name = "realEstate"
-    id="realEstate" 
-    value="<%= rental.realEstate %>" />
+            <div class="edit-elements">
+                <label for="rentPrice">Weekly Rent Price:</label>
+                <input 
+                type="text"
+                name = "rentPrice"
+                id="rentPrice" 
+                value="<%= rental.rentPrice %>" />
+            
+            <div class="edit-elements">
+                <label for="finalComments">Final Comments:</label>
+                <input 
+                type="textarea"
+                name = "finalComments"
+                id="finalComments" 
+                value="<%= rental.finalComments %>" />
+            </div>   
 
-    <label for="linkURL">Link to Real Estate:</label>
-    <input 
-    type="linkURL"
-    name = "linkURL"
-    id="linkURL" 
-    value="<%= rental.linkURL %>" />
+            <div class="edit-elements">
+                <label for="image">Image:</label>
+                <input 
+                type="file"
+                name = "image"
+                id="image" 
+                value="<%= rental.imageURL %>" />
+            </div>
 
-    <label for="room">Rooms:</label>
-    <input 
-    type="number"
-    name = "rooms"
-    id="rooms" 
-    value="<%= rental.rooms %>" />
-<br>
-    <label for="bathrooms">Bathrooms:</label>
-    <input 
-    type="number"
-    name = "bathrooms"
-    id="bathrooms" 
-    value="<%= rental.bathrooms %>" />
+        
+        <input type="submit" value="Update Property">
 
-    <label for="extras ">Extra Details:</label>
-    <input 
-    type="text"
-    name = "extras"
-    id="extras" 
-    value="<%= rental.extras %>" />
-
-    <label for="petFriendly">Pet Friendly:</label>
-    <input 
-    type="checkbox"
-    name = "petFriendly"
-    id="petFriendly"
-    <% if (rental.petFriendly) { %>
-        checked
-    <% } %> 
-    />
-
-    <label for="rentPrice">Weekly Rent Price:</label>
-    <input 
-    type="text"
-    name = "rentPrice"
-    id="rentPrice" 
-    value="<%= rental.rentPrice %>" />
-   
-    <label for="finalComments">Final Comments:</label>
-    <input 
-    type="text"
-    name = "finalComments"
-    id="finalComments" 
-    value="<%= rental.finalComments %>" />
-    
-
-    <label for="image">Image:</label>
-    <input 
-    type="file"
-    name = "image"
-    id="image" 
-    value="<%= rental.imageURL %>" />
-
-
-    <br>
-    <br>
-    <input type="submit" value="Update Property">
-
-    </form>
+        </form>
+    </div>
 
 
 

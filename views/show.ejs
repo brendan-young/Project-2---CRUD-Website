@@ -1,34 +1,35 @@
 <%- include('./partials/head.ejs') %>
 
-<h1> Property: <%= rental.address %></h1>
+<div class="show-information">
+    <h1> Property: <%= rental.address %></h1>
 
-<img class="show-img" src="<%= rental.imageURL %>" alt="" />
+    <img class="show-img" src="<%= rental.imageURL %>" alt="" />
 
-<h2>Real Estate: 
-    <a href="<%= rental.linkURL %>" ><%= rental.realEstate %></a>
-</h2>
+    <h2>Real Estate: 
+        <a href="<%= rental.linkURL %>" ><%= rental.realEstate %></a>
+    </h2>
 
-<p>
-    Rooms: <%= rental.rooms %>
-    <br>
-    Bathrooms: <%= rental.bathrooms %>
-    <br>
-    Extras: <br>
-     <%= rental.extras %>
-    <br>
-    <% if (rental.petFriendly) { %>
-        This property is pet friendly.
-        <% } else { %>
-            This property is not pet friendly.
-        <% } %>
-    <br>
-    Rental Price: <%= rental.rentPrice %>
-    <br>
-    Additional Information: <br>
-    <%= rental.finalComments %>
-    <br>
+    <div class="information-block">
+        <p><span class="bold"> Rooms: </span><%= rental.rooms %> </p>
+        
+        <p><span class="bold"> Bathrooms: </span><%= rental.bathrooms %></p>
+        
+        <p><span class="bold">Extras: </span>
+        <%= rental.extras %> </p>
+        
+        <p><% if (rental.petFriendly) { %>
+            This property is pet friendly.
+            <% } else { %>
+                This property is not pet friendly.
+            <% } %></p>
 
-</p>
+            <p><span class="bold">Rental Price: </span><%= rental.rentPrice %></p>
+            
+        <p><span class="bold">Additional Information: </span>
+        <%= rental.finalComments %></p>
+        
+    </div>
+</div>
 
 
 <%- include('./partials/footer.ejs') %>

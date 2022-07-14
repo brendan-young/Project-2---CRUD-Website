@@ -13,7 +13,7 @@ const rentalSchema = new Schema (
         petFriendly: { type: Boolean, default: false},
         rentPrice: { type: String },
         finalComments: { type: String},
-        imageURL: { type: String }
+        imageURL: { type: String, default: 'https://loremflickr.com/600/600/house' }
     },
     { timestamps: true }
 )
