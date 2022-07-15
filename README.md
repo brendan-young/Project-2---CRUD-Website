@@ -16,9 +16,26 @@ For this project I chose to create a CRUD (create, read, update, delete) web bas
 
 ## Challenges
 I chose to not use Bootstap Framework for this project as I wanted to practice and continue my learning of HTML/CSS. 
- One of the largest challenges I came up against was structuring my HTML and utilising CSS to create styling that I was content with. Whilst working on the display of the rental cards seen in the /rentals coute - I had an overlapping issue where the cards would overlap with one another, covering the 'delete' & 'edit' buttons. This was rectified by putting the cards in a single class and changing the display to block so they would stack ontop of eachother rather than inline. 
+ One of the largest challenges I came up against was structuring my HTML and utilising CSS to create styling that I was content with. Whilst working on the display of the rental cards seen in the /rentals coute - I had an overlapping issue where the cards would overlap with one another, covering the 'delete' & 'edit' buttons. This was rectified by putting the cards in a single class and changing the display to block so they would stack ontop of eachother rather than inline. This was done as follows: <br>
+  HTML:
 
-Another challenge I faced was my buttons were rendering with the default HTML styling. I was able to have this changed to a custom button layout by... 
+  ```html
+  <a class="rentals-info" href="<%= baseUrl %>/<%= rental.id %>">
+                    <img src="<%= rental.imageURL %>" />
+                        <div class="show-links">
+                            <%= rental.address %> 
+                        </div>
+                </a>
+```
+
+CSS:
+```s
+.rentals-info {
+    display: block;
+} 
+```
+
+Another challenge I faced was my buttons were rendering with the default HTML styling. I was able to have this changed to a custom button layout by utilising a `class="button"` class in each `input type="submit"` element.
 
 ## Future Functionality
 - Login/Logout user functionality - this is a top priority as only registered users will have the ability to create and edit properties. Guest users may be able to view properties and reviews, but should not have access to be able to update and create without signing up. This functionality will include password encryption secutiry.
