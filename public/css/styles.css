@@ -24,7 +24,7 @@ header {
     /* gap: 6px; */
     /* border: 5px solid lightgreen; */
     align-items: stretch;
-    width: 840px;
+    max-width: 840px;
     margin: 0 auto
 }
 
