@@ -1,5 +1,8 @@
 # Brendan Young - Project 2 - CRUD Web App
 ### Rental Property Reviews
+Public Link: https://brendan-young-project-two.herokuapp.com/rentals
+<br>
+GitHub: https://github.com/brendan-young/Project-2---CRUD-Website
 ## Tech Stack:
 - Node.js
 - Express
@@ -22,8 +25,12 @@ Another challenge I faced was my buttons were rendering with the default HTML st
 
 - Image upload - Giving users the ability to upload their own images of properties. Currently the application renders random 'house' images from loremflickr.com - this will be changed to allow users to upload multiple images with their reviews. These images will then be displayed in a thumbnail, where users can select the image to view it full sized, and scroll through the images. 
 
-- One-to-many commenting relationships - Users will have the ability to comment on a particular property to share their experiences/opinions of each property. This will result in more transparency as guest users will be able to view properties as well as user comments.
+- One-to-many relationships - User comments - Users will have the ability to comment on a particular property to share their experiences/opinions of each property. This will result in more transparency as guest users will be able to view properties as well as user comments.
 One-to-many relationship will also be incorporated for apartment complexes with multiple apartments/flats/duplexes. Users will be able to find the building by address or name, and browse reviews of different aparments & flats within the same complex.
+This can also be extended to allow users to filter by properties a particular real estate business currently manages, showcasing all properties managed by a particular real estate.
 
 - Google Maps API Integration - Allow users to view the localation of reviewed apartments/complexes visually via a Google Maps API. 
+
+## Changes in consideration
+- I may look at create a new clone of this web app and utilising Bootstrap in the future for a more consistent UI.
 
