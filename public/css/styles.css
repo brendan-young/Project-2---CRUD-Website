@@ -24,7 +24,8 @@ header {
     /* gap: 6px; */
     /* border: 5px solid lightgreen; */
     align-items: stretch;
-    width: 100%;
+    width: 840px;
+    margin: 0 auto
 }
 
 .show-img {
@@ -38,6 +39,7 @@ header {
 
 .show-links {
     padding-left: 15px;
+    padding-right: 15px;
 }
 
 .action-bar {

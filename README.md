@@ -37,6 +37,8 @@ CSS:
 
 Another challenge I faced was my buttons were rendering with the default HTML styling. I was able to have this changed to a custom button layout by utilising a `class="button"` class in each `input type="submit"` element.
 
+Currently images are uploading size dependant of the length address of the property in the homepage. This needs to be adjusted so each image is the same size, and there is padding for the text areas.
+
 ## Future Functionality
 - Login/Logout user functionality - this is a top priority as only registered users will have the ability to create and edit properties. Guest users may be able to view properties and reviews, but should not have access to be able to update and create without signing up. This functionality will include password encryption secutiry.
 
